@@ -13,6 +13,7 @@
   set page(paper: "a4")
   set text(font: ("Times New Roman", "SimSun"), lang: "zh")
 
+  //************ 图形、代码及表格列表设置
   // this `level: 2` instructs the figure counters to be reset for every
   // level 2 section, so at every level 1 and level 2 heading.
   show heading: i-figured.reset-counters.with(level: 1)
@@ -23,6 +24,12 @@
   // there is never a `0` in the numbering.
   show figure: i-figured.show-figure.with(level: 1)
 
+  set figure.caption(separator: "：")
+  show figure.where(kind: raw): set figure.caption(position: top)
+  show figure.where(kind: table): set figure.caption(position: top)
+  //************
+
+  //************ 代码框设置
   let icon(codepoint) = {
     box(height: 0.8em, baseline: 0.05em, image(codepoint))
     h(0.1em)
@@ -36,14 +43,13 @@
     py3: (name: "python", icon: none, color: nameColor),
     rs: (name: "rust", icon: none, color: nameColor),
   ))
+  //************
 
-  set figure.caption(separator: "：")
-  show figure.where(kind: raw): set figure.caption(position: top)
-  show figure.where(kind: table): set figure.caption(position: top)
-
+  //************ 表格设置
   show: tbl.template.with(box: false, tab: "|")
+  //************
 
-  // Title page.
+  //************ 标题也设置
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
   if logo != none {
     v(0.4fr)
@@ -56,7 +62,7 @@
   v(20fr, weak: true)
   text(2em, weight: 700, title)
 
-  // Author information.
+  // 作者
   v(1.5em, weak: true)
   let by = authors.map(author => [#strong(author)]).join(" ")
   text(1.2em, by)
@@ -66,12 +72,16 @@
 
   set align(left)
   pagebreak()
+  //************
 
-  // Table of contents.
+  //************ 页眉、页脚
   set page(
     header: [#h(1fr)#title#h(1fr)#line(length: 100%, stroke: 2pt)],
     number-align: center,
   )
+  //************
+
+  //************ 目录
   set page(numbering: "I")
   counter(page).update(1)
 
@@ -84,8 +94,9 @@
   i-figured.outline(target-kind: table, title: [表格列表])
   i-figured.outline(target-kind: raw, title: [代码列表])
   pagebreak()
+  //************
 
-  // Main body.
+  //************ 正文
   set page(numbering: "1")
   counter(page).update(1)
   set par(first-line-indent: 2em, justify: true)
@@ -97,4 +108,5 @@
   } // Only works for paragraphs directly after heading
 
   body
+  //************
 }
