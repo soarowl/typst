@@ -58,11 +58,8 @@
 
   // Author information.
   v(1.5em, weak: true)
-  if (authors.len() > 1) {
-    text(1.2em, ..authors.map(author => [#strong(author) ]))
-  } else {
-    text(1.2em, strong(authors.first()))
-  }
+  let by = authors.map(author => [#strong(author)]).join(" ")
+  text(1.2em, by)
 
   v(70fr)
   text(1.1em, date)
