@@ -1,5 +1,6 @@
 #import "@preview/codly:0.1.0":*
 #import "@preview/i-figured:0.2.1"
+#import "@preview/tbl:0.0.4"
 
 #let article(
   title: "",
@@ -36,11 +37,14 @@
     rs: (name: "rust", icon: none, color: nameColor),
   ))
 
-  // #set figure(numbering: "1.1")
   set figure.caption(separator: "：")
-  // #show figure.where(kind: raw): it => [#align(center)[#it.caption]#v(10pt, weak: true)#it.body]
 
-  show figure.where(kind: "i-figured-raw"): it => [#align(center)[#it.caption]#v(10pt, weak: true)#it.body]
+  show figure.where(kind: raw): set figure.caption(position: top)
+  show figure.where(kind: table): set figure.caption(position: top)
+  // show figure.where(kind: raw): it => [#align(center)[#it.caption]#v(10pt, weak: true)#it.body]
+  // show figure.where(kind: table): it => [#align(center)[#it.caption]#v(10pt, weak: true)#it.body]
+
+  show: tbl.template.with(box: false, tab: "|")
 
   // Title page.
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
@@ -83,6 +87,7 @@
   }
   outline(title: [目#h(2em)录], indent: true)
   i-figured.outline(title: [图形列表])
+  i-figured.outline(target-kind: table, title: [表格列表])
   i-figured.outline(target-kind: raw, title: [代码列表])
   pagebreak()
 
@@ -99,4 +104,3 @@
 
   body
 }
-

@@ -1,11 +1,6 @@
 #import "article.typ":*
 
-#show: article.with(
-  title: "python数据处理编程",
-  authors: (
-    "卓能文",
-  ),
-)
+#show: article.with(title: "python数据处理编程", authors: ("卓能文",))
 
 = 简介
 希克森写道，Flutter是“老谷歌人”最后推出的项目之一，属于Larry
@@ -28,13 +23,22 @@ Page在Alphabet创建前不久发起的一系列雄心勃勃的实验的一部�
 至于谷歌的文化是否可以挽救，希克森认为可以，但他称“时间紧迫”。他写道：“谷歌文化的腐化最终将变得不可逆转，因为它需要充当道德指南针的那种人，而这类人在没有道德指南针的情况下不会愿意加入谷歌。”
 
 == 概述
-#figure(caption: [计算斐波纳契序列], raw(read("src/fibonaci.py"), lang: "py3", block: true))
+#figure(
+  caption: [计算斐波纳契序列],
+  align(start, raw(read("src/fibonaci.py"), lang: "py3", block: true)),
+)
 
 #figure(caption: [苹果], image("images/apple.jpg", width: 90%))
 
-#figure(caption: [hello.rs], raw(read("src/hello.rs"), lang: "rs", block: true))
+#figure(
+  caption: [hello.rs],
+  align(start, raw(read("src/hello.rs"), lang: "rs", block: true)),
+)
 
-#figure(caption: [日志过滤], raw(read("src/logfilter.v"), lang: "v", block: true))
+#figure(
+  caption: [日志过滤],
+  align(start, raw(read("src/logfilter.v"), lang: "v", block: true)),
+)
 
 = 学习
 Fortran 2023是Fortran编程语言的最新版本。它是一种高性能并行编程语言，专为科学和工程计算而设计。Fortran
@@ -51,8 +55,27 @@ Fortran 2023是Fortran编程语言的最新版本。它是一种高性能并行�
 + 本地并行：Fortran是一种本地并行编程语言，具有直观的类似数组的语法，用于在CPU之间传递数据。您可以在单个CPU上、共享内存多核系统上或分布式内存的HPC或基于云的系统上运行几乎相同的代码。Coarrays、teams、events和集体子程序允许您表达最适合当前问题的不同并行编程模式。
 
 == 深入
-#figure(caption: [计算斐波纳契序列], raw(read("src/fibonaci.py"), lang: "py3", block: true))
+#figure(
+  caption: [计算斐波纳契序列],
+  align(start, raw(read("src/fibonaci.py"), lang: "py3", block: true)),
+)
 
 #figure(caption: [苹果], image("images/apple.jpg", width: 90%))
 
-#figure(caption: [hello.rs], raw(read("src/hello.rs"), lang: "rs", block: true))
+#figure(
+  caption: [hello.rs],
+  align(start, raw(read("src/hello.rs"), lang: "rs", block: true)),
+)
+
+#figure(caption: [tbl表格], kind: table, supplement: "表", ```tbl
+    Rx   Nx
+    Rx   Nx.
+_
+software|version
+_
+     AFL|2.39b
+    Mutt|1.8.0
+    Ruby|1.8.7.374
+TeX Live|2015
+_
+```)
