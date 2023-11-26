@@ -38,11 +38,8 @@
   ))
 
   set figure.caption(separator: "：")
-
   show figure.where(kind: raw): set figure.caption(position: top)
   show figure.where(kind: table): set figure.caption(position: top)
-  // show figure.where(kind: raw): it => [#align(center)[#it.caption]#v(10pt, weak: true)#it.body]
-  // show figure.where(kind: table): it => [#align(center)[#it.caption]#v(10pt, weak: true)#it.body]
 
   show: tbl.template.with(box: false, tab: "|")
 
