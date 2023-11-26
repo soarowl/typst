@@ -8,7 +8,6 @@
   logo: none,
   body,
 ) = {
-
   set heading(numbering: "1.1")
   set page(number-align: center, paper: "a4")
   set text(font: "SimSun", lang: "zh")
@@ -50,15 +49,19 @@
     align(right, image(logo, width: 26%))
     v(9.6fr)
   }
-  
+
   set align(center)
-  
+
   v(20fr, weak: true)
   text(2em, weight: 700, title)
 
   // Author information.
   v(1.5em, weak: true)
-  text(1.2em, ..authors.map(author => [#strong(author) ]))
+  if (authors.len() > 1) {
+    text(1.2em, ..authors.map(author => [#strong(author) ]))
+  } else {
+    text(1.2em, strong(authors.first()))
+  }
 
   v(70fr)
   text(1.1em, date)
