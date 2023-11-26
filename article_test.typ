@@ -28,41 +28,13 @@ Page在Alphabet创建前不久发起的一系列雄心勃勃的实验的一部�
 至于谷歌的文化是否可以挽救，希克森认为可以，但他称“时间紧迫”。他写道：“谷歌文化的腐化最终将变得不可逆转，因为它需要充当道德指南针的那种人，而这类人在没有道德指南针的情况下不会愿意加入谷歌。”
 
 == 概述
-#figure(caption: [计算斐波纳契序列], ```py3
-def fibonaci(n):
-    if n <= 1:
-        return n
-    else:
-        return(fibonaci(n-1) + fibonaci(n-2))
-```)
+#figure(caption: [计算斐波纳契序列], raw(read("src/fibonaci.py"), lang: "py3", block: true))
 
 #figure(caption: [苹果], image("images/apple.jpg", width: 90%))
 
-#figure(caption: [hello.rs], ```rs
-fn main() {
-    println!("Hello, world!");
-}
-```)
+#figure(caption: [hello.rs], raw(read("src/hello.rs"), lang: "rs", block: true))
 
-#figure(caption: [日志过滤], ```v
-// Print file lines that start with "DEBUG:"
-import os
-
-// `read_file` returns an optional (`?string`), it must be checked
-text := os.read_file('app.log') or {
-    // `err` is a special variable that contains the error
-    // in `or {}` blocks
-    eprintln('failed to read the file: ${err}')
-    return
-}
-
-lines := text.split_into_lines()
-for line in lines {
-    if line.starts_with('DEBUG:') {
-        println(line)
-    }
-}
-```)
+#figure(caption: [日志过滤], raw(read("src/logfilter.v"), lang: "v", block: true))
 
 = 学习
 Fortran 2023是Fortran编程语言的最新版本。它是一种高性能并行编程语言，专为科学和工程计算而设计。Fortran
@@ -79,18 +51,8 @@ Fortran 2023是Fortran编程语言的最新版本。它是一种高性能并行�
 + 本地并行：Fortran是一种本地并行编程语言，具有直观的类似数组的语法，用于在CPU之间传递数据。您可以在单个CPU上、共享内存多核系统上或分布式内存的HPC或基于云的系统上运行几乎相同的代码。Coarrays、teams、events和集体子程序允许您表达最适合当前问题的不同并行编程模式。
 
 == 深入
-#figure(caption: [计算斐波纳契序列], ```py3
-def fibonaci(n):
-    if n <= 1:
-        return n
-    else:
-        return(fibonaci(n-1) + fibonaci(n-2))
-```)
+#figure(caption: [计算斐波纳契序列], raw(read("src/fibonaci.py"), lang: "py3", block: true))
 
 #figure(caption: [苹果], image("images/apple.jpg", width: 90%))
 
-#figure(caption: [hello.rs], ```rs
-fn main() {
-    println!("Hello, world!");
-}
-```)
+#figure(caption: [hello.rs], raw(read("src/hello.rs"), lang: "rs", block: true))
