@@ -9,7 +9,7 @@
   body,
 ) = {
   set heading(numbering: "1.1")
-  set page(number-align: center, paper: "a4")
+  set page(paper: "a4")
   set text(font: "SimSun", lang: "zh")
 
   // this `level: 2` instructs the figure counters to be reset for every
@@ -70,6 +70,13 @@
   pagebreak()
 
   // Table of contents.
+  set page(
+    header: [#h(1fr)#title#h(1fr)#line(length: 100%, stroke: 2pt)],
+    number-align: center,
+  )
+  set page(numbering: "I")
+  counter(page).update(1)
+
   show outline: it => {
     show heading: set align(center)
     it
@@ -80,6 +87,8 @@
   pagebreak()
 
   // Main body.
+  set page(numbering: "1")
+  counter(page).update(1)
   set par(first-line-indent: 2em, justify: true)
   show par: set block(spacing: 0.65em)
   // Workaround 3: Automatically add empty paragraph after heading
