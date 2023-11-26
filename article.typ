@@ -81,7 +81,7 @@
     show heading: set align(center)
     it
   }
-  outline(title: [目#h(2em)录])
+  outline(title: [目#h(2em)录], indent: true)
   i-figured.outline(title: [图形列表])
   i-figured.outline(target-kind: raw, title: [代码列表])
   pagebreak()
