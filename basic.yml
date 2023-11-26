@@ -1,0 +1,400 @@
+---
+audio-descriptions:
+  affiliated:
+    - names: Taylor, Dallas
+      role: narrator
+  author: Barrows, Miellyn Fitzwater
+  date: 2017-02-07
+  issue: 8
+  parent:
+    author: Taylor, Dallas
+    title: Twenty Thousand Hertz
+    type: Audio
+  title: Audio Descriptions
+  type: Audio
+  url: https://www.20k.org/episodes/audio
+barb:
+  author: Günther-Haug, Barbara
+  date: 2020
+  language: de-DE
+  location: München
+  publisher: MVG
+  title: Den Boden unter den Füßen verlieren
+  type: Book
+camb:
+  parent:
+    title: Cambridge Dictionary
+    type: Reference
+  title: authoritative
+  type: Entry
+  url:
+    date: 2020-11-29
+    value: https://dictionary.cambridge.org/dictionary/english/authoritative
+dns-encryption:
+  author: Internet Engineering Task Force
+  date: 2000
+  serial-number: RFC 2845
+  title: Secret Key Transaction Authentication for DNS
+  type: Reference
+  url: https://tools.ietf.org/html/rfc2845
+donne:
+  author: Donne, John
+  date: 1995
+  editor: ["Stringer, Gary A.", "Pebworth, Ted-Larry"]
+  location: Bloomington
+  parent:
+    editor: Stringer, Gary A.
+    title: The Variorum Edition of the Poetry of John Donne
+    type: Book
+  publisher: Indiana University Press
+  title: The "Anniversaries" and the "Epicedes and Obsequies"
+  type: Book
+  volume: 6
+drill:
+  author: Steyerl, Hito
+  date: 2019-06-20
+  location: New York
+  organization: Thompson Arts Center
+  title: Drill
+  type: Artwork
+editors:
+  author: Munroe, Randall
+  date: 2014-03-12
+  title: Types of Editors
+  type: Artwork
+  url: https://xkcd.com/1341/
+electronic-music:
+  author: Ishkur
+  serial-number: v2.5
+  title: Ishkur's Guide to Electronic Music
+  type: Web
+  url:
+    date: 2020-11-12
+    value: http://www.techno.org/electronic-music-guide/
+foia:
+  date: 1967
+  serial-number: Pub. L. No. 107-296, 80 Stat. 250
+  title: Freedom of Information Act
+  type: Legislation
+gedanken:
+  author: Moore, Edward F.
+  page-range: 129-153
+  parent:
+    date: 1956-04
+    editor: ["Shannon, C. E.", "McCarthy, J."]
+    location: Princeton, NJ, USA
+    parent:
+      title: Annals of Mathematics Studies
+      type: Anthology
+    publisher: NBS
+    serial-number:
+      isbn: 978-0-691-07916-5
+    title: Automata studies
+    type: Anthology
+    volume: 34
+  title: Gedanken-experiments on sequential machines
+  type: Anthos
+georgia:
+  author: Silver, Nate
+  date: 2020-11-04
+  title: Trump's claim to have won Georgia is highly dubious. No network has called it. He's only ahead by 2.5 points there, and the outstanding votes are mostly mail votes in very blue counties, likely very Democratic. Biden may even be a slight favorite there.
+  type: post
+  url: https://twitter.com/NateSilver538/status/1323889051037028353
+harry:
+  page-range: 135-139
+  parent:
+    author: Rowling, J. K.
+    date: ~2003-06-21
+    page-total: 768
+    serial-number:
+      isbn: 978-0747551003
+    title: Harry Potter and the Order of the Phoenix
+    volume: 5
+    volume-total: 7
+  serial-number: 3
+  type: Chapter
+house:
+  author:
+    - Jerrentrup, Andreas
+    - Mueller, Tobias
+    - Glowalla, Ulrich
+    - Herder, Meike
+    - Henrichs, Nadine
+    - Neubauer, Andreas
+    - Schaefer, Juergen R.
+  date: 2018-03-13
+  parent:
+    issue: 3
+    title:
+      value: PLoS ONE
+      verbatim: true
+    volume: 13
+  serial-number:
+    doi: 10.1371/journal.pone.0193972
+    serial: e0193972
+  title: Teaching medicine with the help of "Dr. House"
+  type: Article
+interior:
+  affiliated:
+    - names: Davidson, Adam
+      role: director
+    - names: McKenna, Chris
+      role: writer
+  date: 2010-11-18
+  issue: 9
+  parent:
+    affiliated:
+      - names: Harmon, Dan
+        role: executive-producer
+    publisher: Universal Television; Sony Pictures Television; Krasnoff Foster Productions; Harmonious Claptrap; Russo Brothers Film
+    title: Community
+    volume-total: 6
+  runtime: '22:00'
+  title: Conspiracy Theories and Interior Design
+  type: Video
+  volume: 2
+kinetics:
+  author: ["Doan, T. D.", "Tran Thoai, D. B.", "Haug, Hartmut"]
+  date: 2020-10-14
+  page-range: 165126-165139
+  page-total: 13
+  parent:
+    issue: 16
+    publisher: American Physical Society
+    title:
+      value: Physical Review B
+      verbatim: true
+    volume: 102
+  serial-number:
+    doi: 10.1103/PhysRevB.102.165126
+  title: Kinetics and luminescence of the excitations of a nonequilibrium polariton condensate
+  type: Article
+latex-users:
+  author: Pepe, Alberto
+  date: 2017-02-21
+  parent:
+    title: Authorea
+    type: Repository
+  serial-number:
+    doi: 10.22541/au.148771883.35456290
+  title: How many scholarly articles are written in LaTeX?
+  type: Article
+logician:
+  parent:
+    title: ImageNet
+    type: Repository
+    url: http://image-net.org
+  serial-number: n10269785
+  title: Logician
+  type: Entry
+  url:
+    date: 2019-12-02
+    value: http://image-net.org/api/text/wordnet.structure.hyponym?wnid=n10269785
+mattermost:
+  author: Mattermost
+  parent:
+    title: Policies
+    type: Web
+  title: Mattermost Privacy Policy
+  type: Web
+  url:
+    date: 2020-11-29
+    value: https://mattermost.com/privacy-policy/
+oiseau:
+  date: 2020-12-18
+  location: Lyon, France
+  organization: Musée des Confluences
+  title: L'oiseau rare, de l'hirondelle au kakapo
+  type: Exhibition
+  url:
+    date: 2020-11-04
+    value: https://www.museedesconfluences.fr/fr/evenements/l%E2%80%99oiseau-rare-de-l%E2%80%99hirondelle-au-kakapo
+omarova-libra:
+  author: ["Omarova, Saule", "Steele, Graham"]
+  date: 2019-11-04
+  parent:
+    location: New York, NY, USA
+    title:
+      value: The New York Times
+      verbatim: true
+    type: Newspaper
+  title:
+    sentence-case: There’s a lot we still don’t know about Libra
+    value: There’s a Lot We Still Don’t Know About Libra
+  type: Article
+  url: https://www.nytimes.com/2019/11/04/opinion/facebook-libra-cryptocurrency.html
+overleaf:
+  author: John
+  date: 2019-11-08
+  parent:
+    title: Overleaf Blog
+    type: Blog
+  title: Celebrating over five million users, a quarter million daily actives, and over five years of dedicated user support
+  type: Article
+  url: https://de.overleaf.com/blog/celebrating-over-five-million-users-and-a-quarter-million-daily-actives
+plaque:
+  date: 2020
+  location: Berlin, Germany
+  parent:
+    author: Jacoby, Max
+    date: 1967
+    parent:
+      archive: Landesmuseum Koblenz
+      archive-location: Koblenz, Germany
+      title: Bleibtreustraße
+      type: Anthology
+    type: Artwork
+  publisher: Stiftung Reinbeckhallen
+  title: Informational plaque about Jacoby's 1967 photos
+  type: Misc
+really-habitable:
+  author:
+    - Pedbost, Marven F.
+    - Pomalgu, Trillean
+    - Lintott, Chris
+    - Eisner, Nora
+    - Nicholson, Belinda
+  date: 2020
+  parent:
+    title: arXiv
+    type: Repository
+  serial-number: 2003.13722
+  title: Defining the Really Habitable Zone
+  type: Article
+  url: https://arxiv.org/abs/2003.13722
+renaissance:
+  affiliated:
+    - names: ["Emem", "Blanchard, Fred"]
+      role: illustrator
+  author: Duval, Fred
+  date: 2018
+  edition: 1
+  language: fr-FR
+  publisher: Dargaud
+  title:
+    translation: Renaissance, The Unrooted
+    value: Renaissance, Les Déracinés
+  type: Book
+  volume: 1
+  volume-total: 3
+roe-wade:
+  date: 1973
+  serial-number: 93 S. Ct. 705
+  title: Roe v. Wade
+  type: Case
+science-e-issue:
+  author:
+    - alias: laurmaedje
+      given-name: Laurenz
+      name: Mädje
+  date: 2020-07-18
+  parent:
+    title: Typst
+    type: Repository
+    url: https://github.com/typst/typst
+  serial-number: 3
+  title: Tokenization of + and - with scientific notation
+  type: Web
+  url: https://github.com/typst/typstc/issues/3
+swedish:
+  editor: Brown, George C.
+  parent:
+    date: 1978
+    edition: 2
+    title: Wisconcin Magazine of History
+    type: Periodical
+    volume: 61-62
+  title:
+    short: Swedish Traveller
+    value: 'A Swedish Traveller in Early Wisconcin: The Observations of Fredrika Bremer'
+  type: Article
+  volume: 1-2
+terminator-2:
+  affiliated:
+    - names: Cameron, James
+      role: director
+    - names:
+        - Schwarzenegger, Arnold
+        - Hamilton, Linda
+        - Patrick, Robert
+      role: cast-member
+    - names: Fiedel, Brad
+      role: composer
+  date: 1991-07-01
+  publisher: Carolco Pictures; Pacific Western Productions; Lightstorm Entertainment; Le Studio Canal+ S.A.
+  runtime: '137:00'
+  time-range: 17:05-17:48
+  title: 'Terminator 2: Judgment Day'
+  type: Video
+un-hdr:
+  author: United Nations Development Programme
+  date: 2019
+  location: New York
+  serial-number:
+    issn: 2412-3129
+  title: Human Development Report 2019
+  type: Report
+  url: http://hdr.undp.org/sites/default/files/hdr2019.pdf
+wire:
+  affiliated:
+    - names:
+        - Simon, David
+        - Colesberry, Robert F.
+        - Noble, Nina Kostroff
+      role: executive-producer
+  date: 2002
+  publisher: Blown Deadline Productions
+  title: The wire
+  type: Video
+  volume-total: 5
+worth:
+  author: Worth, Jon
+  title: Jon Worth Euroblog
+  type: Blog
+  url: https://jonworth.eu/
+wrong:
+  author: Prokopov, Nikita
+  date: 2018-12-29
+  parent:
+    title: tonsky.me
+    type: Blog
+  title: It is fast or it is wrong
+  type: Article
+  url: https://tonsky.me/blog/slow-wrong/
+wwdc-network:
+  author: ["Mehta, Jiten", "Kinnear, Eric"]
+  date: 2020-06-26
+  parent:
+    - location: Mountain View, CA
+      organization: Apple Inc.
+      title:
+        short: WWDC 2020
+        value: '{World Wide Developer Conference 2020}'
+      type: Conference
+    - runtime: '00:13:42'
+      type: Video
+      url:
+        date: 2020-09-17
+        value: https://developer.apple.com/videos/play/wwdc2020/10111/
+  title: Boost Performance and Security with Modern Networking
+  type: Article
+zygos:
+  author:
+    - Prekas, George
+    - Kogias, Marios
+    - Bugnion, Edouard
+  date: 2017
+  page-range: 325-341
+  parent:
+    - location: New York, NY, USA
+      publisher: Association for Computing Machinery
+      serial-number:
+        isbn: 978-1450350853
+      title: Proceedings of the 26th Symposium on Operating Systems Principles
+      type: Proceedings
+  serial-number:
+    doi: 10.1145/3132747.3132780
+  title:
+    value: 'ZygOS: Achieving Low Tail Latency for Microsecond-Scale Networked Tasks'
+    verbatim: true
+  type: Article
