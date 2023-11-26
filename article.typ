@@ -11,7 +11,7 @@
 ) = {
   set heading(numbering: "1.1")
   set page(paper: "a4")
-  set text(font: "SimSun", lang: "zh")
+  set text(font: ("Times New Roman", "SimSun"), lang: "zh")
 
   // this `level: 2` instructs the figure counters to be reset for every
   // level 2 section, so at every level 1 and level 2 heading.
