@@ -23,6 +23,7 @@
   // e.g., setting `zero-fill: false` and `leading-zero: false` assures
   // there is never a `0` in the numbering.
   show figure: i-figured.show-figure.with(level: 1)
+  // show math.equation: i-figured.show-equation // master 版本有错
 
   set figure.caption(separator: "：")
   show figure.where(kind: raw): set figure.caption(position: top)
@@ -93,6 +94,7 @@
   i-figured.outline(title: [图形列表])
   i-figured.outline(target-kind: table, title: [表格列表])
   i-figured.outline(target-kind: raw, title: [代码列表])
+  // i-figured.outline(target: math.equation, title: [公式列表]) // master 版本有错
   pagebreak()
   //************
 
