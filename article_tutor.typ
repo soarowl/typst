@@ -2,6 +2,9 @@
 
 #show: article.with(title: "Typst简明使用教程", authors: ("卓能文",))
 
+// 加入公式编号
+#set math.equation(numbering: "(1.1)")
+
 // 正式版不能编译
 #show raw.where(block: true, lang: "typst-ex"): it => {
   let txt = it.text
