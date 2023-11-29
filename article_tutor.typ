@@ -235,3 +235,37 @@ def fibonaci(n):
 所示。
 
 #figure(caption: [玫瑰], image("images/rose.jpg", width: 50%)) <rose>
+
+== 参考文献设置
+参考文献设置也比较简单，只需在文件尾部加入`#bibliography("example.yml", style:
+"gb-7114-2015-numeric")`即可。yml格式如下： ```yaml
+audio-descriptions:
+ affiliated:
+ - names: Taylor, Dallas
+ role: narrator
+ author: Barrows, Miellyn Fitzwater
+ date: 2017-02-07
+ issue: 8
+ parent:
+ author: Taylor, Dallas
+ title: Twenty Thousand Hertz
+ type: Audio
+ title: Audio Descriptions
+ type: Audio
+ url: https://www.20k.org/episodes/audio
+
+barb:
+ author: Günther-Haug, Barbara
+ date: 2020
+ language: de-DE
+ location: München
+ publisher: MVG
+ title: Den Boden unter den Füßen verlieren
+ type: Book
+``` 在文章适当的地方插入`@audio-descriptions`@audio-descriptions 或`@barb`@barb 这类的键。
+
+= 写在最后
+Typst相对来说还比较新，功能和latex相比稍弱，同时还存在一些bug。如果使用过程中有任何建议或模板上有什么问题，请到`https://github.com/soarowl/typst.git`提要求。
+
+// #bibliography("basic.yml", style: "gb-7114-2015-numeric") // master 版本编译错误。
+#bibliography("basic.yml")
