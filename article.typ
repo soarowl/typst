@@ -23,7 +23,8 @@
   // e.g., setting `zero-fill: false` and `leading-zero: false` assures
   // there is never a `0` in the numbering.
   show figure: i-figured.show-figure.with(level: 1)
-  show math.equation: i-figured.show-equation // master 版本有错
+  // master 版本不能编译
+  show math.equation: i-figured.show-equation
 
   set figure.caption(separator: "：")
   show figure.where(kind: raw): set figure.caption(position: top)
