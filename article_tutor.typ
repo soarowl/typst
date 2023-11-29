@@ -211,7 +211,7 @@ def fibonaci(n):
 )
 ````
 
-=== 居左显示(codly包)
+=== 居左显示(codly)
 因为`figure`命令会导致代码居中显示，添加`align(start)`命令让代码居左：
 ````typst-ex
 #figure(
