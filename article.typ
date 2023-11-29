@@ -1,5 +1,5 @@
-#import "@preview/codly:0.1.0":*
 #import "@preview/i-figured:0.2.1"
+#import "@preview/sourcerer:0.2.1": code
 #import "@preview/tbl:0.0.4"
 
 #let article(
@@ -24,7 +24,7 @@
   // there is never a `0` in the numbering.
   show figure: i-figured.show-figure.with(level: 1)
   // master 版本不能编译
-  show math.equation: i-figured.show-equation
+  // show math.equation: i-figured.show-equation
 
   set figure.caption(separator: "：")
   show figure.where(kind: raw): set figure.caption(position: top)
@@ -32,21 +32,9 @@
   //************
 
   //************ 代码框设置
-  let icon(codepoint) = {
-    box(height: 0.8em, baseline: 0.05em, image(codepoint))
-    h(0.1em)
+  show raw.where(block: true): it => {
+    code(it)
   }
-
-  let nameColor = rgb("#CE412B")
-
-  show: codly-init.with()
-
-  codly(languages: (
-    py3: (name: "python", icon: none, color: nameColor),
-    rs: (name: "rust", icon: none, color: nameColor),
-    typ: (name: "typst", icon: none, color: nameColor),
-    typc: (name: "typst", icon: none, color: nameColor),
-  ))
   //************
 
   //************ 表格设置
@@ -98,7 +86,7 @@
   i-figured.outline(target-kind: table, title: [表格列表])
   i-figured.outline(target-kind: raw, title: [代码列表])
   // master 版本不能编译
-  i-figured.outline(target: math.equation, title: [公式列表])
+  // i-figured.outline(target: math.equation, title: [公式列表])
   pagebreak()
   //************
 
