@@ -292,7 +292,7 @@ Typst相对来说还比较新，功能和latex相比稍弱，同时还存在一�
 
 #counter(heading).update(0)
 #set heading(numbering: "A.1")
-= 附源码
+= 附录
 
 == article模板
 #raw(read("article.typ"), lang: "typ", block: true)
