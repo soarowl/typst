@@ -51,7 +51,7 @@
   show: tbl.template.with(box: false, tab: "|")
   //************
 
-  //************ 标题也设置
+  //************ 标题页设置
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
   if logo != none {
     v(0.4fr)
@@ -95,7 +95,8 @@
   i-figured.outline(title: [图形列表])
   i-figured.outline(target-kind: table, title: [表格列表])
   i-figured.outline(target-kind: raw, title: [代码列表])
-  i-figured.outline(target: math.equation, title: [公式列表]) // master 版本有错
+  // master 版本不能编译
+  i-figured.outline(target: math.equation, title: [公式列表])
   pagebreak()
   //************
 
