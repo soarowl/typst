@@ -185,10 +185,10 @@ Typst默认只能显示一级公式，不能按章节重新计数，可采用第
 代码可以很容易添加，格式和markdown一样。 ````typst-ex
 ```py3
 def fibonaci(n):
- if n <= 1:
- return n
- else:
- return fibonaci(n - 1) + fibonaci(n - 2)
+    if n <= 1:
+        return n
+    else:
+        return fibonaci(n - 1) + fibonaci(n - 2)
 ```
 ````
 
@@ -213,10 +213,10 @@ def fibonaci(n):
  align(start)[
 ```py3
 def fibonaci(n):
- if n <= 1:
- return n
- else:
- return fibonaci(n - 1) + fibonaci(n - 2)
+    if n <= 1:
+        return n
+    else:
+        return fibonaci(n - 1) + fibonaci(n - 2)
 ```
  ]
 )
@@ -240,28 +240,27 @@ def fibonaci(n):
 参考文献设置也比较简单，只需在文件尾部加入`#bibliography("example.yml", style:
 "gb-7114-2015-numeric")`即可。yml格式如下： ```yaml
 audio-descriptions:
- affiliated:
- - names: Taylor, Dallas
- role: narrator
- author: Barrows, Miellyn Fitzwater
- date: 2017-02-07
- issue: 8
- parent:
- author: Taylor, Dallas
- title: Twenty Thousand Hertz
- type: Audio
- title: Audio Descriptions
- type: Audio
- url: https://www.20k.org/episodes/audio
-
+  affiliated:
+    - names: Taylor, Dallas
+      role: narrator
+  author: Barrows, Miellyn Fitzwater
+  date: 2017-02-07
+  issue: 8
+  parent:
+    author: Taylor, Dallas
+    title: Twenty Thousand Hertz
+    type: Audio
+  title: Audio Descriptions
+  type: Audio
+  url: https://www.20k.org/episodes/audio
 barb:
- author: Günther-Haug, Barbara
- date: 2020
- language: de-DE
- location: München
- publisher: MVG
- title: Den Boden unter den Füßen verlieren
- type: Book
+  author: Günther-Haug, Barbara
+  date: 2020
+  language: de-DE
+  location: München
+  publisher: MVG
+  title: Den Boden unter den Füßen verlieren
+  type: Book
 ``` 在文章适当的地方插入`@audio-descriptions`@audio-descriptions 或`@barb`@barb 这类的键。
 
 = 写在最后
