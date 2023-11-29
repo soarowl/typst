@@ -178,3 +178,57 @@ _
 ```typst-ex
 $ sum_(k=1)^n k = (n(n+1)) / 2 $
 ```
+
+Typst默认只能显示一级公式，不能按章节重新计数，可采用第三方包`i-figured`实现，本模板已经内置。格式请参考`latex`相关文档。
+
+== 显示代码
+代码可以很容易添加，格式和markdown一样。
+````typst-ex
+```py3
+def fibonaci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonaci(n - 1) + fibonaci(n - 2)
+```
+````
+
+=== 添加标题
+````typst-ex
+#figure(
+  caption: [计算斐波纳契],
+```py3
+def fibonaci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonaci(n - 1) + fibonaci(n - 2)
+```
+)
+````
+
+=== 居左显示
+因为`figure`命令会导致代码居中显示，添加`align(start)`命令让代码居左：
+````typst-ex
+#figure(
+  caption: [计算斐波纳契],
+  align(start)[
+```py3
+def fibonaci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonaci(n - 1) + fibonaci(n - 2)
+```
+  ]
+)
+````
+
+=== 显示代码文件
+在Typst文档中添加太多代码，导致可读性降低，也不便于后续采用相应的工具进行编辑、更新、管理与维护，建议将代码组织在一个文件夹中。
+````typst-ex
+#figure(
+  caption: [计算斐波纳契],
+  align(start, raw(read("src/fibonaci.py"), lang: "py3", block: true))
+)
+````
