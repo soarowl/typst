@@ -44,6 +44,7 @@
   codly(languages: (
     py3: (name: "python", icon: none, color: nameColor),
     rs: (name: "rust", icon: none, color: nameColor),
+    typ: (name: "typst", icon: none, color: nameColor),
     typc: (name: "typst", icon: none, color: nameColor),
   ))
   //************

@@ -8,7 +8,7 @@
 // 正式版编译时不能访问图片
 #show raw.where(block: true, lang: "typst-ex"): it => {
   let txt = it.text
-  raw(lang: "typc", txt, block: true)
+  raw(lang: "typ", txt, block: true)
   eval(txt, mode: "markup")
 }
 
@@ -31,7 +31,7 @@ Typst的本地安装非常简单，直接从`https://github.com/typst/typst/rele
 == 创建文件
 新建文本文档，以`.typ`为后缀。建议克隆`https://github.com/soarowl/typst.git`到本地，
 并将其中的`article.typ`复制到文档所在的目录，并适当进行修改。然后在文档头部添加如下内容：
-```typc
+```typ
 #import "article.typ":*
 
 #show: article.with(title: "Typst简明使用教程", authors: ("卓能文",))
@@ -39,7 +39,7 @@ Typst的本地安装非常简单，直接从`https://github.com/typst/typst/rele
 
 == 章节设置
 格式有点类似markdown，比较简单：
-```typc
+```typ
 = 第一章
 内容
 
@@ -290,10 +290,10 @@ Typst相对来说还比较新，功能和latex相比稍弱，同时还存在一�
 = 附源码
 
 == article模板
-#raw(read("article.typ"), lang: "typc", block: true)
+#raw(read("article.typ"), lang: "typ", block: true)
 
 == 本文档源码
-#raw(read("article_tutor.typ"), lang: "typc", block: true)
+#raw(read("article_tutor.typ"), lang: "typ", block: true)
 
 // master 版本编译错误。
 // #bibliography("basic.yml", style: "gb-7114-2015-numeric")
