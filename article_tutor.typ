@@ -1,4 +1,5 @@
 #import "article.typ":*
+#import "babble-bubbles.typ":*
 
 #show: article.with(title: "Typst简明使用教程", authors: ("卓能文",))
 
@@ -79,7 +80,11 @@ Typst的本地安装非常简单，直接从`https://github.com/typst/typst/rele
 )
 ```
 
-注：放入`#figure`命令中的图片同时会在图形列表中出现。
+
+
+#info[放入`#figure`命令中的图片同时会在图形列表中出现。]
+
+
 
 === 多图并列
 ```typst-ex
@@ -168,7 +173,7 @@ _
 )
 ````
 
-注： 由于目前Typst中有bug，显示表格时，必须加上`kind`和`supplement`字段。
+#info[由于目前Typst中有bug，显示表格时，必须加上`kind`和`supplement`字段。]
 
 更多用法请参考`https://github.com/maxcrees/tbl.typ`
 
@@ -184,7 +189,7 @@ $ sum_(k=1)^n k = (n(n+1)) / 2 $
 Typst默认只能显示一级公式，不能按章节重新计数，可采用第三方包`i-figured`实现，本模板已经内置。格式请参考`latex`相关文档。
 
 == 显示代码
-注：目前，`codly`显示代码有些问题， 如部分代码在换页时被遮挡，超长代码不自动换行处理等。暂时换为`sourcerer`包进行代码显示。
+#info[目前，`codly`显示代码有些问题， 如部分代码在换页时被遮挡，超长代码不自动换行处理等。暂时换为`sourcerer`包进行代码显示。]
 
 代码可以很容易添加，格式和markdown一样。 
 ````typst-ex
