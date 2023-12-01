@@ -291,7 +291,7 @@ barb:
 在文章适当的地方插入`@audio-descriptions`@audio-descriptions 或`@barb`@barb 这类的键。
 
 = 写在最后
-Typst相对来说还比较新，功能和latex相比稍弱，同时还存在一些bug。如果使用过程中有任何建议或模板上有什么问题，请到`https://github.com/soarowl/typst.git`提要求。
+Typst相对来说还比较新，功能和latex相比稍弱，同时还存在一些bug。如果使用过程中有任何建议或模板上有什么问题，请到#link("https://github.com/soarowl/typst.git")提要求。
 
 #counter(heading).update(0)
 #set heading(numbering: "A.1")
