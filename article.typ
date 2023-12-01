@@ -10,7 +10,6 @@
   body,
 ) = {
   set heading(numbering: "1.1")
-  set page(paper: "a4")
   set text(font: ("Times New Roman", "SimSun"), lang: "zh")
 
   //************ 图形、代码及表格列表设置
