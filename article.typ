@@ -9,6 +9,7 @@
   logo: none,
   body,
 ) = {
+  set document(title: title, author: authors.join(" "))
   set heading(numbering: "1.1")
   set text(font: ("Times New Roman", "SimSun"), lang: "zh")
 
