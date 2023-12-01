@@ -80,11 +80,7 @@ Typst的本地安装非常简单，直接从`https://github.com/typst/typst/rele
 )
 ```
 
-
-
 #info[放入`#figure`命令中的图片同时会在图形列表中出现。]
-
-
 
 === 多图并列
 ```typst-ex

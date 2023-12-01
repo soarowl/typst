@@ -26,9 +26,9 @@
   // master 版本不能编译
   // show math.equation: i-figured.show-equation
 
-  set figure.caption(separator: "：")
-  show figure.where(kind: raw): set figure.caption(position: top)
-  show figure.where(kind: table): set figure.caption(position: top)
+  // set figure(numbering: "1-1") // don't work, maybe a typst bug
+  set figure.caption(position: top, separator: [#h(1em)])
+  show figure.where(kind: image): set figure.caption(position: bottom)
   //************
 
   //************ 代码框设置
@@ -81,7 +81,7 @@
     show heading: set align(center)
     it
   }
-  outline(title: [目#h(2em)录], indent: true)
+  outline(title: [目#h(2em)录], indent: true, depth: 3)
   i-figured.outline(title: [图形列表])
   i-figured.outline(target-kind: table, title: [表格列表])
   i-figured.outline(target-kind: raw, title: [代码列表])
