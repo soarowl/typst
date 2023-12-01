@@ -1,5 +1,5 @@
 #import "article.typ":*
-#import "babble-bubbles.typ":*
+#import "@preview/gentle-clues:0.4.0":*
 
 #show: article.with(title: "Typst简明使用教程", authors: ("卓能文",))
 
