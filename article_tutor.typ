@@ -9,7 +9,7 @@
 // 正式版编译时不能访问图片
 #show raw.where(block: true, lang: "typst-ex"): it => {
   let txt = it.text
-  code(raw(txt, lang: "typ", block: true), lang: "typst")
+  code(raw(txt, lang: "typc", block: true), lang: "typst")
   eval(txt, mode: "markup")
 }
 
@@ -17,14 +17,16 @@
 Typst是撰写任何长篇文本（如论文、文章、科学论文、书籍、报告和家庭作业）的优秀工具。此外，Typst非常适合于编写任何包含数学符号的文档，例如在数学、物理和工程领域的论文。最后，由于其强大的风格化和自动化功能，它是任何一组具有共同风格的文件的绝佳选择，例如丛书。Typst文档风格和md文档类似，所以很容易上手，同时内置了强大的脚本功能及较多的排版原语，因此，能比较轻松完成优质文档的撰写及排版工作。
 
 = Typst安装
-Typst的本地安装非常简单，直接从`https://github.com/typst/typst/releases`下载适合自己操作系统的版本，解压到适当的地方即完成安装。另外，也可以在`https://typst.app`上注册账号，在线编辑typst文档，并下载生成的PDF文档。
+Typst的本地安装非常简单，直接从#link("https://github.com/typst/typst/releases")下载适合自己操作系统的版本，解压到适当的地方即完成安装。另外，也可以在#link("https://typst.app")上注册账号，在线编辑typst文档，并下载生成的PDF文档。
 
-编辑器建议采用`visual studio code`，并安装`Typst LSP`和`Typst Preview`插件。
+对初学者编辑器建议采用`visual studio code`，并安装`Typst LSP`和`Typst Preview`插件。老手可以安装`sumlime text`并安装`typst`插件。
+
+#warning[当你的文档内容比较多的时候，VS code反应将变得极其缓慢，建议对文件进行切分或换`sumlime text`编辑器]
 
 = Typst使用
 
 == 创建文件
-新建文本文档，以`.typ`为后缀。建议克隆`https://github.com/soarowl/typst.git`到本地，并将其中的`article.typ`复制到文档所在的目录，并适当进行修改。然后在文档头部添加如下内容：
+新建文本文档，以`.typ`为后缀。建议克隆#link("https://github.com/soarowl/typst.git")到本地，并将其中的`article.typ`复制到文档所在的目录，并适当进行修改。然后在文档头部添加如下内容：
 ```typ
 #import "article.typ":*
 
@@ -171,7 +173,7 @@ _
 
 #info[由于目前Typst中有bug，显示表格时，必须加上`kind`和`supplement`字段。]
 
-更多用法请参考`https://github.com/maxcrees/tbl.typ`
+更多用法请参考#link("https://github.com/maxcrees/tbl.typ")
 
 == 显示公式
 ```typst-ex
@@ -296,10 +298,10 @@ Typst相对来说还比较新，功能和latex相比稍弱，同时还存在一�
 = 附录
 
 == article模板
-#raw(read("article.typ"), lang: "typ", block: true)
+#raw(read("article.typ"), lang: "typc", block: true)
 
 == 本文档源码
-#raw(read("article_tutor.typ"), lang: "typ", block: true)
+#raw(read("article_tutor.typ"), lang: "typc", block: true)
 
 // master 版本编译错误。
 // #bibliography("basic.yml", style: "gb-7114-2015-numeric")
