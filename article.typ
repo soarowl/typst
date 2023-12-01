@@ -1,3 +1,4 @@
+#import "@preview/gentle-clues:0.4.0":*
 #import "@preview/i-figured:0.2.1"
 #import "@preview/sourcerer:0.2.1": code
 #import "@preview/tbl:0.0.4"
