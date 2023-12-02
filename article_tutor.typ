@@ -1,5 +1,4 @@
 #import "article.typ":*
-#import "@preview/gentle-clues:0.4.0":*
 
 #show: article.with(title: "Typst简明使用教程", authors: ("卓能文",))
 
@@ -27,7 +26,7 @@ Typst的本地安装非常简单，直接从#link("https://github.com/typst/typs
 
 == 创建文件
 新建文本文档，以`.typ`为后缀。建议克隆#link("https://github.com/soarowl/typst.git")到本地，并将其中的`article.typ`复制到文档所在的目录，并适当进行修改。然后在文档头部添加如下内容：
-```typ
+```typc
 #import "article.typ":*
 
 #show: article.with(title: "Typst简明使用教程", authors: ("卓能文",))
@@ -35,7 +34,7 @@ Typst的本地安装非常简单，直接从#link("https://github.com/typst/typs
 
 == 章节设置
 格式有点类似markdown，比较简单：
-```typ
+```typc
 = 第一章
 内容
 
@@ -241,7 +240,7 @@ def fibonaci(n):
 ````
 
 === 显示代码文件(sourcerer)
-````typ
+````typc
 #figure(
   caption: [计算斐波纳契],
   code(raw(read("src/fibonaci.py"), lang: "py3", block: true), lang: "python")
