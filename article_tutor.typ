@@ -20,7 +20,7 @@ Typst的本地安装非常简单，直接从#link("https://github.com/typst/typs
 
 对初学者编辑器建议采用`visual studio code`，并安装`Typst LSP`和`Typst Preview`插件。老手可以安装`sumlime text`并安装`typst`插件。
 
-#warning[当你的文档内容比较多的时候，VS code反应将变得极其缓慢，建议对文件进行切分或换`sumlime text`编辑器]
+#warning[当你的文档内容比较多的时候，VS code反应将变得极其缓慢，建议对文件进行切分或换`sumlime text`编辑器。当然，最好用的编辑器还是helix！]
 
 = Typst使用
 
