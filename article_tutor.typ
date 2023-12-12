@@ -5,7 +5,6 @@
 // 加入公式编号
 #set math.equation(numbering: "(1.1)")
 
-// 正式版编译时不能访问图片
 #show raw.where(block: true, lang: "typst-ex"): it => {
   let txt = it.text
   code(raw(txt, lang: "typc", block: true), lang: "typst")
