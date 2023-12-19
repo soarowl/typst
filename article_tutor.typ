@@ -260,7 +260,7 @@ def fibonaci(n):
 #figure(caption: [玫瑰], image("images/rose.jpg", width: 50%)) <rose>
 
 == 参考文献设置
-参考文献设置也比较简单，只需在文件尾部加入`#bibliography("example.yml", style: "gb-7114-2015-numeric")`即可。yml格式如下：
+参考文献设置也比较简单，只需在文件尾部加入`#bibliography("example.yml", style: "gb-7714-2015-numeric")`即可。yml格式如下：
 ```yaml
 audio-descriptions:
   affiliated:
