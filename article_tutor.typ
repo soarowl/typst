@@ -301,6 +301,4 @@ Typst相对来说还比较新，功能和latex相比稍弱，同时还存在一�
 == 本文档源码
 #raw(read("article_tutor.typ"), lang: "typc", block: true)
 
-// master 版本编译错误。
-// #bibliography("basic.yml", style: "gb-7114-2015-numeric")
-#bibliography("basic.yml")
+#bibliography("basic.yml", style: "gb-7714-2015-numeric")
