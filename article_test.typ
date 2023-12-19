@@ -82,4 +82,4 @@ TeX Live|2015
 _
 ```) <lang>
 
-#bibliography("basic.yml", style: "gb-7114-2015-numeric")
+#bibliography("basic.yml", style: "gb-7714-2015-numeric")
