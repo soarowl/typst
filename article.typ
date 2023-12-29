@@ -1,5 +1,5 @@
 #import "@preview/gentle-clues:0.4.0":*
-#import "@preview/i-figured:0.2.1"
+#import "@preview/i-figured:0.2.3"
 #import "@preview/sourcerer:0.2.1": code
 #import "@preview/tbl:0.0.4"
 
@@ -39,7 +39,7 @@
   //************
 
   //************ 表格设置
-  show: tbl.template.with(box: false, tab: "|")
+  show: tbl.template.with(box: false, breakable: true, tab: "|")
   //************
 
   //************ 标题页设置

@@ -56,6 +56,29 @@ Typst的本地安装非常简单，直接从#link("https://github.com/typst/typs
 = 第三章
 ```
 
+== 编译
+
+```sh
+typst compile filename.typ
+```
+
+如果没有任何错误，将输出`filename.pdf`文档。
+
+== 注意几个特殊字符
+
+```tbl
+    L LX LX
+    L LX LX.
+_
+字符 | 意义 | 转义
+_
+\* | 两个\*字符之间的文字将加粗显示 | \\\*
+\# | 表示`typst`命令 | \\\#
+\+ | 段首\+ 有序列表 | \\\+
+\- | 段首\- 无序列表 | \\\-
+_
+```
+
 == 显示图片
 建议将图片保存在一个特定的目录，如`images、img`之类的地方。
 ```typst-ex
