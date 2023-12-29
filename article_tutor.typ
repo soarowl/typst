@@ -67,8 +67,8 @@ typst compile filename.typ
 == 注意几个特殊字符
 
 ```tbl
-    L LX LX
-    L LX LX.
+    C LX LX
+    C LX LX.
 _
 字符 | 意义 | 转义
 _
