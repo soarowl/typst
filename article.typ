@@ -1,5 +1,5 @@
 #import "@preview/gentle-clues:0.6.0":*
-#import "@preview/i-figured:0.2.3"
+#import "@preview/i-figured:0.2.4"
 #import "@preview/sourcerer:0.2.1": code
 #import "@preview/tbl:0.0.4"
 
